@@ -1,0 +1,71 @@
+Esta es una lista de comandos requeridos para configurar git 
+
+Estados de los archivos en 3 fases:
+1. Directorio de trabajo (working directory) - Untracked
+2. Area de preparacion (staging area) - Added
+3. Repositorio (.git) - Commit
+
+-------------------------------------------------------------------------------------
+Estado de la carpeta donde se encuentra el repositorio 
+git status
+-------------------------------------------------------------------------------------
+Cambio de nombre de la rama principal del proyecto, para este caso es main
+git config --global init.defaultBranch main
+-------------------------------------------------------------------------------------
+Se inicializa el repositorio (archivo oculto en la carpeta .gít)
+git init
+-------------------------------------------------------------------------------------
+Se agrega los archivos para pasarlos de estado y poderlos considerar para subir al git 
+git add nombrearchivo
+
+Si rquiero agregar todos los archivos que tienen cambios
+git add .
+-------------------------------------------------------------------------------------
+Devolver archivo a fase inicial
+git rm --cached nombrearchivo
+-------------------------------------------------------------------------------------
+Cambio de editor de texto 
+Se cambia para este caso a VS code
+git config --global core.editor "code --wait"
+-------------------------------------------------------------------------------------
+Cambio de descripcion del ultimo Commit
+git commit --amend
+-------------------------------------------------------------------------------------
+Listar commits realizados
+git log
+-------------------------------------------------------------------------------------
+Eliminar el ultmo commit sin perder cambios 
+en caso de que se olvido añadir algun otro archivo
+git reset --soft HEAD~1
+-------------------------------------------------------------------------------------
+Crear una ramma
+git branch nombrerama
+
+consultar ramas
+git branch
+-------------------------------------------------------------------------------------
+Cambiar de rama
+git checkout nombrerama
+-------------------------------------------------------------------------------------
+Crear y cambiar de rama en un solo comando 
+git checkout -b nombrerama
+-------------------------------------------------------------------------------------
+Cambiar nombre de una rama (se tiene que estar parado en la rama que quiero cambiar)
+git branch -m nombrenuevo
+
+Cambiar nombre de una rama (sin estar parado en la rama)
+git branch -m nombrerama nombrenuevo
+-------------------------------------------------------------------------------------
+Crear copia del repositorio que se encuentra en github
+git clone xxxxxxx.git
+-------------------------------------------------------------------------------------
+Cambiar usuario en git para que corresponda con el de Github
+git config --global user.name "<usuario>"
+-------------------------------------------------------------------------------------
+Cambiar correo en git para que corresponda con el de Github
+git config --global user.email "<correo>"
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
