@@ -65,6 +65,8 @@ git config --global user.name "<usuario>"
 Cambiar correo en git para que corresponda con el de Github
 git config --global user.email "<correo>"
 -------------------------------------------------------------------------------------
+Subir cambios a github 
+git push referenciarepo ramadetrabajo
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
