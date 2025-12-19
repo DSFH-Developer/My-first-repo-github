@@ -68,6 +68,9 @@ git config --global user.email "<correo>"
 Subir cambios a github 
 git push referenciarepo ramadetrabajo
 -------------------------------------------------------------------------------------
+Actualizar cambios de github a repo local y combinar
+git pull referenciarepo ramadetrabajo
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
+
